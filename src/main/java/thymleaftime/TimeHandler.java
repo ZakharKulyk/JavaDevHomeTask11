@@ -12,13 +12,12 @@ import org.thymeleaf.context.Context;
 import org.thymeleaf.templateresolver.ClassLoaderTemplateResolver;
 
 import java.io.IOException;
-import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 
 @WebServlet(value = "/time")
-public class timeHandler extends HttpServlet {
+public class TimeHandler extends HttpServlet {
     private TemplateEngine engine;
 
 

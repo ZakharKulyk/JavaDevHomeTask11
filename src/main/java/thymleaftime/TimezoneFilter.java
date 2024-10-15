@@ -10,7 +10,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @WebFilter(value = "/time")
-public class timezoneFilter extends HttpFilter {
+public class TimezoneFilter extends HttpFilter {
     @Override
     protected void doFilter(HttpServletRequest req, HttpServletResponse res, FilterChain chain) throws IOException, ServletException {
         String regex = "^UTC([+-](0[0-9]|1[0-4]):([0-5][0-9])|([+-](0[0-9]|1[0-4]))|)$";
